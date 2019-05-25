@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>"Title"</title>
+    <script type="text/javascript" src="processing.js"></script>
+
+  </head>
+  <body>
+    <h1 id="h1">Double-Double Pendulum</h1>
+    <form class="" action="index.html" method="post">
+      <label for="theta1">Theta1</label>
+      <input type="number" id="theta1" name="theta1" value="90">
+      <br/>
+      <label for="theta2">Theta2</label>
+      <input type="number" id="theta2" name="theta2" value="90">
+      <br />
+      <input type="checkbox" name="x2" id="x2" checked>
+      <label for="x2">Activate Second Pendulum</label>
+      <br />
+      <label for="theta1_2">Theta1</label>
+      <input type="number" id="theta1_2" name="theta1_2" value="90">
+      <br />
+      <label for="theta2_2">Theta2</label>
+      <input type="number" id="theta2_2" name="theta2_2" value="91">
+      <br/>
+      <br/>
+      <button type="button" id="submit" name="button" onsubmit="start()" onclick="start()" >Start</button>
+    </form>
+    <canvas id="canvas1" ></canvas>
+    <script type="text/javascript" src="pendulum.js" ></script>
+  </body>
+</html>
