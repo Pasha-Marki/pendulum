@@ -139,14 +139,14 @@ function start(){
   var canvas = document.getElementById("canvas1");
   processingInstance = new Processing(canvas, sketchProc);
   button = document.getElementById('submit')
-  button.value = "Stop"
+  button.innerHTML = "Stop"
   button.onsubmit = function() { stop() }
   button.onclick = function() { stop() }
 }
 
 function stop(){
   processingInstance.exit()
-  button.value = "Start"
+  button.innerHTML = "Reset"
   button.onsubmit = function() { start() }
   button.onclick = function() { start() }
 
